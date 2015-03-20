@@ -79,7 +79,7 @@ body {
 	color:#494948;
 }
 
-.login.ng-enter {
+.login {
 	-webkit-animation: fadeInUp 1s;
 	-moz-animation: fadeInUp 1s;
 	-o-animation: fadeInUp.1;
@@ -93,7 +93,7 @@ body {
 	padding-left:0;
 }
 
-.create-account-form.ng-enter {
+.create-account-form {
 	-webkit-animation: fadeInRight .75s;
 	-moz-animation: fadeInRight .75s;
 	-o-animation: fadeInRight.75s;
@@ -104,21 +104,9 @@ body {
 						Welcome Template
 ******************************************************************/
 
-.welcome.ng-enter {
-	-webkit-animation: pulse .75s;
-	-moz-animation: pulse .75s;
-	-o-animation: pulse .75s;
-	animation: pulse .75s;
-}
-
 .fa-angle-double-right {
 	margin-top:30px;
 	margin-left: 30px;
-}
-
-.panel {
-	border:none;
-	border-radius: 0;
 }
 
 .welcome-panel {
@@ -127,7 +115,17 @@ body {
 	margin:0px auto;
 	box-shadow: 0px 0px 10px #231F20;
 	position: relative;
+	-webkit-animation: zoomIn .75s;
+	-moz-animation: zoomIn .75s;
+	-o-animation: zoomIn .75s;
+	animation: zoomIn .75s;
 }
+
+.panel {
+	border:none;
+	border-radius: 0;
+}
+
 
 .panel-heading {
 	background-color:#465568;
