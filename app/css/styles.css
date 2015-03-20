@@ -1,0 +1,158 @@
+/******************************************************************
+						Global Styles
+******************************************************************/
+
+body {
+  background-color:#E2E2E1;
+}
+
+@font-face {
+	font-family: 'OpenSans Light';
+	src: url('../fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+	font-family: 'OpenSans Semibold';
+	src: url('../fonts/OpenSans-Semibold.ttf');
+}
+
+@font-face {
+	font-family: 'OpenSans Regular';
+	src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+.container {
+	width:100%;
+}
+
+/******************************************************************
+						Log in Template
+******************************************************************/
+
+.main-logo {
+	width:600px;
+	height:auto;
+	margin:50px auto;
+}
+
+.fa-user, .fa-lock {
+	color:#999C95;
+}
+
+.fa-lock {
+	padding-right:3px;
+}
+
+.input-group {
+	margin-bottom:20px;
+}
+
+.input-group-addon {
+	background-color:#fff;
+}
+
+.form-control {
+	height:55px;
+	font-family: 'OpenSans Regular';
+	font-size:25px;
+	border-radius: 0;
+}
+
+.login-button {
+	height:55px;
+	background-color: #465669;
+	color:#F8F9F9;
+	font-family: 'OpenSans Regular';
+	font-size:30px;
+}
+
+.create-account {
+	margin-top:20px;
+	position: relative;
+	left: 22px;
+}
+
+.create-account span {
+}
+
+.create-account a {
+	color:#494948;
+}
+
+.login.ng-enter {
+	-webkit-animation: fadeInUp 1s;
+	-moz-animation: fadeInUp 1s;
+	-o-animation: fadeInUp.1;
+	animation: fadeInUp 1s;
+}
+
+/******************************************************************
+						Create Account Template
+******************************************************************/
+.first-name {
+	padding-left:0;
+}
+
+.create-account-form.ng-enter {
+	-webkit-animation: fadeInRight .75s;
+	-moz-animation: fadeInRight .75s;
+	-o-animation: fadeInRight.75s;
+	animation: fadeInRight .75s;
+}
+
+/******************************************************************
+						Welcome Template
+******************************************************************/
+
+.welcome.ng-enter {
+	-webkit-animation: pulse .75s;
+	-moz-animation: pulse .75s;
+	-o-animation: pulse .75s;
+	animation: pulse .75s;
+}
+
+.fa-angle-double-right {
+	margin-top:30px;
+	margin-left: 30px;
+}
+
+.panel {
+	border:none;
+	border-radius: 0;
+}
+
+.welcome-panel {
+	max-width:700px;
+	min-height:800px;
+	margin:0px auto;
+	box-shadow: 0px 0px 10px #231F20;
+	position: relative;
+}
+
+.panel-heading {
+	background-color:#465568;
+	border-radius: 0;
+	border:none;
+	color:#f9f9f8;
+	font-family: 'OpenSans Light';
+	font-size:30px;
+	text-align: center;
+	padding:15px 15px;
+}
+
+.logo-icon {
+	width:200px;
+	height:auto;
+	margin-top:80px;
+}
+
+.message {
+	text-align:center;
+	position: absolute;
+	bottom:125px;
+	font-family: 'OpenSans Light';
+	font-size:30px;
+	color:#494948;
+	padding-left:150px;
+	padding-right:150px;
+}

@@ -1,0 +1,27 @@
+   <div class="container">
+
+      <div class="row">
+      <!-- header -->
+        <div class="panel panel-primary">
+
+          <div class="panel-heading">Marketing</div>
+          <!-- content -->
+
+          <div class="panel-body" id="question-body">
+            <ul class="list-group">
+              <li class="list-group-item" ng-repeat="questionObject in questionsArray">
+                <strong>{{ questionObject.user }} </strong>{{ questionObject.question }}
+              </li>
+            </ul>
+          </div>
+
+          <div class="panel-footer">
+            <input class="form-control" type="text" placeholder="Enter a username..." ng-model="name">
+            <input type="text" class="form-control" placeholder="Type a question..." ng-model="body" ng-keydown="addQuestion($event)">
+          </div>
+
+      </div>
+
+    </div> 
+
+    </div>
