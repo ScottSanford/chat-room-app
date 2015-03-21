@@ -1,0 +1,42 @@
+
+<div class="row">
+	<div class="col-xs-3 sidebar-menu">
+
+		<span class="fa fa-angle-double-left fa-4x pull-right"></span>
+
+		<div class="row">
+			<div class="col-xs-4 sidebar-logo"><img src="images/huddle-logo-icon.png" class="img-responsive sidebar-logo-img"></div>
+			<div class="user-name col-xs-8">{{user.name}}</div>
+		</div>
+
+		<button class="new-chat-button">New Chat</button>
+
+		<div class="rooms">
+			<span>Rooms</span>
+			<ul ng-repeat="room in rooms">
+				<li>{{room}}</li>
+			</ul>
+		</div>
+
+		<div class="team">
+			<span>Team</span>
+			<ul ng-repeat="member in team">
+				<li>{{member}}</li>
+			</ul>
+		</div>
+
+		<hr>
+
+		<div class="team">
+			<span>{{currentRoom}}</span>
+			<ul ng-repeat="member in currentRoomMembers">
+				<li>{{member}}</li>
+			</ul>
+		</div>
+
+	</div>
+
+	<div class="col-xs-9">
+		<current-chat-room></current-chat-room>
+	</div>
+</div>

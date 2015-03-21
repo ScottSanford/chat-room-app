@@ -18,6 +18,10 @@ angular.module("huddleChatApp", [
                         templateUrl: 'partials/welcome.html',
                         controller: 'welcomeCtrl'
                     })
+                    .when('/chat-room', {
+                        templateUrl: 'partials/chat-room.html',
+                        controller: 'chatRoomCtrl'
+                    })
                     .otherwise({
                         redirectTo: '/'
                     });

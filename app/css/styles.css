@@ -23,6 +23,7 @@ body {
 
 .container {
 	width:100%;
+	padding-left:0;
 }
 
 /******************************************************************
@@ -104,9 +105,14 @@ body {
 						Welcome Template
 ******************************************************************/
 
+a, a:hover {
+	color:#494948;
+	text-decoration: none;
+}
+
 .fa-angle-double-right {
 	margin-top:30px;
-	margin-left: 30px;
+	margin-left: 50px;
 }
 
 .welcome-panel {
@@ -154,3 +160,146 @@ body {
 	padding-left:150px;
 	padding-right:150px;
 }
+
+/******************************************************************
+						Chat Room Template
+******************************************************************/
+
+.sidebar-menu {
+	height: 100%;
+	background-color:#F8F9F9;
+	box-shadow: 5px 0px 10px #231F20;
+	-webkit-animation: fadeInLeft .75s;
+	-moz-animation: fadeInLeft .75s;
+	-o-animation: fadeInLeft .75s;
+	animation: fadeInLeft .75s;
+}
+
+.sidebar-logo {
+	padding-right:0;
+}
+
+.sidebar-logo-img {
+	width:40px;
+	height:auto;
+	margin-top:50px;
+	margin-left:15px;
+}
+
+.user-name {
+	font-family: 'OpenSans Regular';
+	font-size:25px;
+	color:#494948;
+	padding-left:0;
+	margin-left:-10px;
+}
+
+.fa-angle-double-left  {
+	margin-right:15px;
+}
+
+.new-chat-button {
+	background-color:#465568;
+	font-family: 'OpenSans Regular';
+	font-size:20px;
+	color:#f9f9f8;
+	margin-left:15px;
+	margin-top:20px;
+}
+
+.rooms {
+	margin-left:15px;
+	margin-top:10px;
+}
+
+.rooms span {
+	font-family: 'OpenSans Light';
+	font-size:25px;
+	color:#494948;
+}
+
+.rooms li {
+	font-family: 'OpenSans Semibold';
+	font-size:20px;
+	color:#494948;
+	list-style-type: none;
+	margin-left:-20px;
+}
+
+.team {
+	margin-left:15px;
+	margin-top:10px;
+}
+
+.team span {
+	font-family: 'OpenSans Light';
+	font-size:25px;
+	color:#494948;
+}
+
+.team li {
+	font-family: 'OpenSans Semibold';
+	font-size:20px;
+	color:#494948;
+	list-style-type: none;
+	margin-left:-20px;
+}
+
+hr {
+	margin-top: 50px;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:    -moz-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:     -ms-linear-gradient(left, #ccc, #333, #ccc);
+    background-image:      -o-linear-gradient(left, #ccc, #333, #ccc);
+}
+
+/******************************************************************
+			Current Chat Room Template (Directive)
+******************************************************************/
+
+.chatroom-panel {
+	max-width:700px;
+	min-height:800px;
+	margin:0px auto;
+	box-shadow: 0px 0px 10px #231F20;
+	position: relative;
+	-webkit-animation: zoomIn .75s;
+	-moz-animation: zoomIn .75s;
+	-o-animation: zoomIn .75s;
+	animation: zoomIn .75s;
+}
+
+.chatroom-heading {
+	background-color:#465568;
+	border-radius: 0;
+	border:none;
+	color:#f9f9f8;
+	font-family: 'OpenSans Light';
+	font-size:30px;
+	text-align: left;
+	padding:15px 15px 15px 30px;
+	margin-top:50px;
+}
+
+.chat-input {
+	position: absolute;
+	bottom:0;
+	margin-left:30px;
+	margin-bottom: 20px;
+	height:35px;
+	border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
