@@ -3,10 +3,23 @@
 
 		<div class="panel-heading chatroom-heading">{{currentRoom}}</div>
 
-		<div class="panel-body">
-			this is where the messages go!
+		<div class="panel-body message-output">
+			<div class="chatBox" scroll-glue>
+				<div ng-repeat="m in messages">
+					<div class="row chatMessage">
+						<div class="name-date col-xs-3">
+							<strong>{{m.user}}</strong>
+							<em class="time">{{m.datetime | date: 'h:mm a' }}</em>
+						</div>
+						<div class="col-xs-9">
+			      			{{ m.message }}
+			    		</div>
+			    	</div>
+	    		</div>
+    		</div>
 		</div>
 
-			<input class="col-xs-11 chat-input" type="text" placeholder="Enter your message...">
-	</div>
+			<input class="col-xs-11 chat-input" type="text" placeholder="Enter your message..." ng-model="currentText" ng-keydown="addMessage($event)">
+
+		</div>
 

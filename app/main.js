@@ -1,8 +1,14 @@
 angular.module("huddleChatApp", [
         'firebase',
         'ngRoute', 
-        'ngAnimate'
+        'ngAnimate', 
+        'luegg.directives'
         ])
+
+        .constant('FIREBASE_URL', 'https://dazzling-inferno-7726.firebaseio.com/')
+        .factory('firebaseReference', function(FIREBASE_URL){
+            return new Firebase(FIREBASE_URL);
+        })
 
         .config(function ($routeProvider) {
                   $routeProvider
