@@ -1,0 +1,21 @@
+	<form class="create-account-form form-group" ng-submit="registerAndCreateProfile()">
+
+		<div class="col-xs-3 col-xs-offset-3 first-name">
+		  <input class="form-control" type="text" placeholder="First name" ng-model="profile.firstname">
+		</div>
+		<div class="col-xs-3 input-group">
+		  <input class="form-control" type="text" placeholder="Last name" ng-model="profile.lastname">
+		</div>
+
+		<div class="col-xs-6 col-xs-offset-3 input-group">
+		  <input class="form-control" type="email" placeholder="Email address" ng-model="profile.email">
+		</div>
+		<div class="col-xs-6 col-xs-offset-3 input-group">
+		  <input class="form-control" type="password" placeholder="Password" ng-model="password">
+		</div>
+
+		{{profile.$id}}
+
+		<button class="col-xs-6 col-xs-offset-3 login-button" type="submit">Create Account</button>
+
+	</form>

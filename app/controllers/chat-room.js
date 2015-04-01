@@ -1,6 +1,12 @@
 angular.module('huddleChatApp')
 
-	.controller('chatRoomCtrl', ['$scope', '$timeout', 'firebaseReference', 'MessageService', function($scope, $timeout, firebaseReference, MessageService){
+	.controller('chatRoomCtrl', ['$scope', '$timeout', 'firebaseReference', '$firebaseAuth','MessageService', function($scope, $timeout, firebaseReference, $firebaseAuth ,MessageService){
+
+		var authRef =  $firebaseAuth(firebaseReference);
+
+		$scope.logout = function() {
+			authRef.unauth();
+		}
 
 		$scope.text = null;
 		$scope.messages = [];
