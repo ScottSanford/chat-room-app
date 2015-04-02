@@ -27,6 +27,23 @@ body {
 }
 
 /******************************************************************
+			            Media Queries
+******************************************************************/
+
+@media (max-width: @screen-sm) {
+    body {
+    	font-size: 14px;
+    }
+    .user-name {
+    	font-size:12px;
+    }
+}
+
+@media (max-width: @screen-xs) {
+    body{font-size: 10px;}
+}
+
+/******************************************************************
 						Log in Template
 ******************************************************************/
 
@@ -174,6 +191,7 @@ a, a:hover {
 ******************************************************************/
 
 .sidebar-menu {
+	max-width:300px;
 	height: 100%;
 	background-color:#F8F9F9;
 	box-shadow: 5px 0px 10px #231F20;
@@ -184,6 +202,7 @@ a, a:hover {
 	-o-animation: fadeInLeft .75s;
 	animation: fadeInLeft .75s;
 	z-index: 2;
+	padding-right:0;
 }
 
 .close-sidebar-menu-animation {
@@ -195,7 +214,7 @@ a, a:hover {
 
 .open-sidebar {
 	position: absolute;
-	top:5px;
+	top:0px;
 	left:15px;
 }
 
@@ -212,10 +231,10 @@ a, a:hover {
 
 .user-name {
 	font-family: 'OpenSans Regular';
-	font-size:25px;
+	font-size:20px;
 	color:#494948;
 	padding-left:0;
-	margin-left:-10px;
+	margin-left: 33px;
 }
 
 .fa-angle-double-left  {
@@ -291,6 +310,10 @@ hr {
     text-align:center;
 }
 
+#lightbox form {
+	margin-top: 200px
+}
+
 .new-room-lightbox {
 	z-index: 10;
 	width:400px;
@@ -316,6 +339,7 @@ hr {
 ******************************************************************/
 
 .chatroom-panel {
+	max-width: 700px;
 	height:85vh;
 	margin:0px auto;
 	margin-left:25px;

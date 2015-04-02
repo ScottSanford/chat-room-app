@@ -1,50 +1,9 @@
 
 <div class="row">
 
-		<span class="fa fa-angle-double-right fa-4x open-sidebar" ng-click="showSidebarMenu = !showSidebarMenu"></span>
+	<span class="fa fa-angle-double-right fa-4x open-sidebar" ng-model="sidebar" value="open"></span>
 
-	<div class="col-xs-3 sidebar-menu" ng-hide="showSidebar" ng-show="showSidebarMenu" ng-class="{'close-sidebar-menu-animation' : showSidebar}">
-
-		<span class="fa fa-angle-double-left fa-4x pull-right" ng-click="showSidebar = ! showSidebar"></span>
-
-		<div class="row">
-			<div class="col-xs-4 sidebar-logo"><img src="images/huddle-logo-icon.png" class="img-responsive sidebar-logo-img"></div>
-			<div class="user-name col-xs-8">{{user.name}}</div>
-		</div>
-
-		<button class="new-chat-button" ng-click="openLightBox()">New Chat</button>
-
-		<div class="rooms">
-			<span>Rooms</span>
-			<ul ng-repeat="room in rooms">
-				<li ng-click="openChatRoom(room.id)">{{room.name}}</li>
-			</ul>
-		</div>
-
-		<div class="team">
-			<span>Team</span>
-			<ul ng-repeat="member in team">
-				<li>{{member}}</li>
-			</ul>
-		</div>
-
-		<hr>
-
-		<div class="team">
-			<span>{{currentRoom}}</span>
-			<ul ng-repeat="member in currentRoomMembers">
-				<li>{{member}}</li>
-			</ul>
-		</div>
-
-		<!-- displayed when you click on New Chat button -->
-		<div class="new-room-lightbox" id="lightbox" ng-if="lightbox">
-			<input class="form-control" type="text" placeholder="Room name" ng-model="newRoomName">
-			<button class="col-xs-6" ng-click="closeLightBox();">Cancel</button>
-			<button class="col-xs-6" ng-click="createNewRoom()">Create</button>
-		</div>
-
-	</div>
+	<sidebar-menu visible="visible" alignment="left"></sidebar-menu>
 
 	<div class="col-xs-9">
 		<a href="#/" ng-click="logout()" class="pull-right logout">Logout</a>

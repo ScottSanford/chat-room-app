@@ -23,6 +23,9 @@
 
 
       <!-- scripts below -->
+      <!-- jQuery -->
+      <script src="lib/jquery/dist/jquery.min.js"></script>
+      <script src="lib/Flowtype.js/flowtype.js"></script> <!-- changes font size -->
 
       <!-- angular -->
       <script src="lib/angular/angular.min.js"></script>
@@ -47,6 +50,7 @@
 
        <!-- directives -->
       <script src="directives/current-chat-room.js"></script>
+      <script src="directives/sidebar-menu.js"></script>
       <script src="directives/create-account-form.js"></script>
       <script src="directives/scrollglue.js"></script>
 
@@ -55,6 +59,18 @@
       <script src="services/messages-service.js"></script>
       <script src="services/registered-users-service.js"></script>
       <script src="services/profile-service.js"></script>
+
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.user-name').flowtype({
+            minimum : 500,
+            maximum : 1200, 
+            minFont : 12, 
+            maxFont : 30, 
+            fontRatio : 30
+          });
+        })
+      </script>
 
   </body>
 </html>

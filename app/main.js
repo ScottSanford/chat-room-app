@@ -16,6 +16,10 @@ angular.module("huddleChatApp", [
             return $firebaseAuth(firebaseReference);
         }])
 
+        .factory('ProfilesRef', ['firebaseReference', function(firebaseReference){
+            return firebaseReference.child('profiles');
+        }])
+
         .config(function ($routeProvider) {
                   $routeProvider
                     .when('/', {
@@ -42,3 +46,4 @@ angular.module("huddleChatApp", [
                         redirectTo: '/'
                     });
           })
+        
